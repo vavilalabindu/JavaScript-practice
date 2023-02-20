@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="setTimeout(todate,3000)">click me for date</button>
+<h1 id="myh1">date is</h1>
+<button onclick="setInterval(curtime,1000)">click me for time</button>
+<h1>time is</h1>
+<h1 id="myh2"></h1>
+<script>
+
+function todate()
+{
+var d=new Date();
+document.getElementById("myh1").innerHTML+=" "+d.getDate()+" "+(d.getMonth()+1)+" "+d.getFullYear();
+}
+
+function curtime()
+{
+var d=new Date();
+document.getElementById("myh2").innerHTML=d.toLocaleTimeString()
+
+}
+
+</script>
+</body>
+</html>

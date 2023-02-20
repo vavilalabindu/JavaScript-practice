@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+          margin-left:70px;
+
+        }
+        #bord{
+            margin-left:400px;
+            margin-top: 100px;
+            border:2px solid black;
+            height: 320px;
+            width: 300px;
+        }
+        #btn{
+         margin-left: 70px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="bord">
+<h1>FD Calculator</h1>
+<table>
+    <tr>
+<td><label>Name</label></td>
+<td><input type="text" id="name"></td>
+</tr><br>
+<tr>
+    <td><label>Amount</label></td>
+        <td><input type="text" id="amt"></td>
+</tr><br>
+<tr>
+    <td><label>term in years</label></td>
+        <td><select name="" id="term">
+       <option>select your option</option>
+       <option>1</option>
+       <option>2</option>
+       <option>3</option>
+       <option>4</option>
+       <option>5</option>
+
+        </select></td>
+</tr><br>
+<tr>
+    <td><label>year of Birth</label></td>
+        <td><input type="text" id="yob"></td>
+</tr>
+</table>
+<br>
+<div id="btn">
+<button style="background-color: green;" onclick="roi()"> submit</button>
+<button style="background-color: red;"> cancel</button>
+</div>
+<br>
+<label id="maturity"></label>
+
+</div>
+<script>
+function roi(){
+var yob=parseInt(document.getElementById("yob").value)
+var myage=parseInt(2023-yob)
+var p=parseInt(document.getElementById("amt").value)
+var t=parseInt(document.getElementById("term").value)
+var r
+if(myage<=40)
+{
+    r=5;
+}
+else if(myage > 40 && myage< 60)  
+{
+    r=6;
+}
+else{
+
+    r=8;
+} 
+var si=parseInt(p*t*r/100)
+var Amount=parseInt(si+p)
+var person=document.getElementById("name").value
+document.getElementById("maturity").innerHTML=person +" your maturity amt is"+ Amount;
+
+}
+</script>
+</body>
+</html>

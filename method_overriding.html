@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+class parent
+{
+	drive()
+	{document.write("<br> this is a drive")}
+}
+
+
+
+class child extends parent
+{
+
+   	drive()
+	{
+      super.drive()
+	document.write(" <br> this is a long drive")
+	}
+}
+
+
+var c1=new child()
+c1.drive();
+</script>
+</body>
+</html>

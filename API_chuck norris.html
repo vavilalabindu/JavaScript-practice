@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<h1 id="joke"></h1>
+<script>
+fetch('https://api.chucknorris.io/jokes/random')
+.then((result)=>{return result.json()})
+.then((data)=>(document.getElementById("joke").innerHTML="the joke is :"+data.value))
+
+
+
+
+</script>
+</body>
+</html>

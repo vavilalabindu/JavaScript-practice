@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var mobile={
+company:"oneplus",
+model:"9RT",
+price:43000,
+Ram:"8gb",
+processor:"sp 888",
+fullname:function(){return "com"+this.company+"&"+"mod"+this.model}
+}
+mobile.company="vivo"
+document.write(mobile.fullname())
+ 
+
+for(items in mobile)
+{document.write("<br>"+items+"."+mobile[items])}
+
+</script>
+</body>
+</html>

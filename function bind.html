@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var person={
+firstname:"bindu",
+lastnate:"hima",
+fullname:function(){return this.firstname+" "+this.lastname}
+}
+
+var person2={
+firstname:"sri",
+lastname:"latha"
+}
+
+let person2fullname=person.fullname.bind(person2)
+document.write(person2fullname())
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function student(fullname,id,session,grade){
+this.fullname=fullname,
+this.id=id,
+this.session=session,
+this.grade=grade
+}
+
+var s1=new student("bindu",1,"mca","A");
+var s2=new student("manvitha",2,"mca","B");
+var s3=new student("pooja",3,"mca","C");
+
+for(prop in s1){
+document.write(prop+":"+s1[prop]+"&nbsp"+"&nbsp")
+}
+
+</script>
+</body>
+</html>

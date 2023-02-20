@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    h1{margin-left: 190px;}
+
+#bord{
+    margin-left: 500px;
+    margin-top: 200px;
+    border: 2px solid black;
+    height: 200px;
+    width: 550px;
+    padding-left: 30px;
+}
+button{
+   height: 40px;
+   width: 100px; 
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    <div id="bord">
+<h1 id="col">Hello World</h1>
+<table>
+    <tr><td>
+        <button  style="background-color: red;" onclick="red()"></button></td>
+        <td><button style="background-color: blue;" onclick="blue()"></button></td>
+        <td><button style="background-color: yellow;" onclick="yellow()"></button></td>
+        <td><button  style="background-color: orange;" onclick="orange()"></button></td>
+        <td><button style="background-color: green;" onclick="green()"></button></td>
+
+
+    </tr>
+    <tr>
+        <td><button onclick="chiller()">chiller</button></td>
+        <td><button onclick="informalroman()">informal roman</button></td>
+        <td><button onclick="tnr()">times new roman</button></td>
+        <td><button onclick="verdana()">verdana</button></td>
+        <td><button onclick="harlowsolid()">harlow solid</button></td>
+    </tr>
+</table>
+</div>
+<script>
+function red(){
+    document.getElementById("col").style.color="red";
+}
+function blue(){
+    document.getElementById("col").style.color="blue";
+}
+function yellow(){
+    document.getElementById("col").style.color="yellow";
+}
+function orange(){
+    document.getElementById("col").style.color="orange";
+}
+function green(){
+    document.getElementById("col").style.color="green";
+}
+function chiller(){
+    document.getElementById("col").style.fontFamily="chiller";
+}
+function informalroman(){
+    document.getElementById("col").style.fontFamily="informal roman";
+}
+function tnr(){
+    document.getElementById("col").style.fontFamily="times new roman";
+}
+function verdana(){
+    document.getElementById("col").style.fontFamily="verdana";
+}
+function harlowsolid(){
+    document.getElementById("col").style.fontFamily="harlow solid";
+}
+
+
+
+</script>
+</body>
+</html>

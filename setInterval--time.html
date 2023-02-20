@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+
+<h1 id="myh1">CURRENT TIME</h1>
+<script>
+setInterval(curtime,1000);
+
+function curtime()
+{
+var d=new Date();
+document.getElementById("myh1").innerHTML=d.toLocaleTimeString()
+
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function student(fullname,id,session,grade)
+{
+this.fullname=fullname,
+this.id=id,
+this.session=session,
+this.grade=grade
+}
+
+var s1=new student("bindu",123,"mca","A");
+var s2=new student("manvitha",124,"mca","B");
+var s3=new student("pooja",125,"mca","A");
+var arr=[s1,s2,s3]
+
+var ourstudent=arr.filter((ele)=>{return ele.grade=="A"})
+for(items of ourstudent)
+{
+	
+        
+	    document.write(items.fullname)
+        
+} 
+
+</script>
+</body>
+</html>
